@@ -1,0 +1,127 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.headerScrolled {
+  background: var(--navy);
+  padding: 0.5rem 0;
+}
+
+.headerScrolled .nav a {
+  color: var(--white);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+.logoImage {
+  height: 60px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.headerScrolled .logoImage {
+  height: 50px;
+  filter: brightness(0) invert(1);
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--navy-light);
+}
+
+.specialLink {
+  color: var(--navy) !important;
+  font-weight: 600 !important;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background: rgba(10, 38, 71, 0.1);
+  transition: all 0.3s ease !important;
+}
+
+.headerScrolled .specialLink {
+  color: var(--white) !important;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.specialLink:hover {
+  background: rgba(10, 38, 71, 0.2);
+  transform: translateY(-2px);
+}
+
+.headerScrolled .specialLink:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .navOpen {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .headerScrolled .navOpen {
+    background: var(--navy);
+  }
+
+  .logoImage {
+    height: 45px;
+  }
+
+  .headerScrolled .logoImage {
+    height: 40px;
+  }
+}
+

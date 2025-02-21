@@ -1,0 +1,195 @@
+.container {
+  min-height: 100vh;
+  padding: 6rem 1rem 2rem;
+  background: var(--gray-light);
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logoLink {
+  display: block;
+  width: 300px;
+  margin: 0 auto 2rem;
+  transition: transform 0.3s ease;
+}
+
+.logoLink:hover {
+  transform: scale(1.02);
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.title {
+  text-align: center;
+  color: var(--navy);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.inputSection {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--navy-light);
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--navy);
+  box-shadow: 0 0 0 2px rgba(10, 38, 71, 0.1);
+}
+
+.addButton {
+  padding: 0.75rem 1.5rem;
+  background: var(--navy);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addButton:hover {
+  background: var(--navy-light);
+  transform: translateY(-2px);
+}
+
+.addButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.namesList {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.nameTag {
+  background: var(--navy);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.deleteButton:hover {
+  opacity: 1;
+}
+
+.wheel {
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+  position: relative;
+  transition: transform 4s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+}
+
+.wheelSegment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  transform-origin: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.spinButton {
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: var(--navy);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.spinButton:hover {
+  background: var(--navy-light);
+  transform: translateY(-2px);
+}
+
+.spinButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--gray-light);
+  border-radius: 4px;
+}
+
+.results h3 {
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+.resultsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+
+.resultItem {
+  background: var(--navy);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .inputSection {
+    flex-direction: column;
+  }
+
+  .wheel {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+

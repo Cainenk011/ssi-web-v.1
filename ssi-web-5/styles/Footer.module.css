@@ -1,0 +1,77 @@
+.footer {
+  background: var(--navy);
+  color: var(--white);
+  padding: 4rem 0 2rem;
+  text-align: center; /* Centrado general del footer */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos de cada columna */
+}
+
+.column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.links li {
+  margin-bottom: 0.75rem;
+}
+
+.links a {
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+.bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.social a {
+  color: var(--white);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  padding: 0.5rem;
+}
+
+.social a:hover {
+  opacity: 1;
+}
+
+.copyright {
+  opacity: 0.8;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
