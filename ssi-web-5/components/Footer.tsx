@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Mail } from "lucide-react"
+import { Facebook } from "lucide-react"
 import styles from "../styles/Footer.module.css"
 
 export default function Footer() {
